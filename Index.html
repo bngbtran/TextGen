@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GenText</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="panel">
+    <h1>TextGen - A way to remember your alphabet</h1>
+    <p class="desc">Input your words here and press "Display" to start !!!</p>
+
+    <label for="inputText">Input your words here:</label>
+    <textarea id="inputText" rows="3" placeholder="Example: A B C D"></textarea>
+    <label for="inputText">Or upload your file here:</label>
+      <input type="file" id="fileInput" accept=".txt" />
+
+
+    <div class="controls">
+      <button id="showBtn">Display</button>
+      <button id="clearBtn" class="ghost">Delete</button>
+    </div>
+  </div>
+
+  <div class="stage" id="stage">
+    <div id="display" class="display">...</div>
+    <footer>Press "Enter" to display</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
